@@ -1,0 +1,125 @@
+/* --- Основные настройки --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+}
+
+/* --- Шапка сайта --- */
+header {
+    background: linear-gradient(90deg, #372579 0%, #151515 100%);
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Контейнер внутри шапки для выравнивания */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Логотип */
+.site-logo {
+    max-width: 200px;
+    height: auto;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* --- Панель навигации --- */
+nav {
+    background-color: #372579;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #151515;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #aeaeae;
+}
+
+/* --- Контейнер --- */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(55, 37, 121, 0.3);
+}
+
+/* --- Основной контент --- */
+main {
+    flex: 3;
+    padding: 20px;
+    color: #151515;
+}
+
+main h2 {
+    color: #372579;
+}
+
+/* --- Боковая панель --- */
+aside {
+    flex: 1;
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 20px;
+    border-left: 4px solid #372579;
+}
+
+aside h3 {
+    color: #FFFFFF;
+    border-bottom: 1px solid #372579;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Кнопки навигации */
+.aside-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.nav-btn {
+    background-color: #372579;
+    color: #FFFFFF;
+    border: 2px solid #372579;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #FFFFFF;
+    color: #372579;
+    border-color: #FFFFFF;
+}
+
+/* --- Медиа и подвал --- */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(90deg, #151515 0%, #372579 100%);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

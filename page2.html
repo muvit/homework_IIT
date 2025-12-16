@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Музыка</title>
+    <!-- Иконка -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Логотип" class="site-logo">
+            <h1>Аудиоплеер</h1>
+        </div>
+    </header>
+
+    <!-- Панель навигации -->
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="page1.html">Фотографии</a> |
+        <a href="page2.html">Музыка</a> |
+        <a href="page3.html">Видео</a>
+    </nav>
+
+    <div class="container">
+        <!-- Содержимое страницы -->
+        <main>
+            <h2>Прослушивание аудио</h2>
+            <p>Ниже представлен элемент для воспроизведения звука.</p>
+            <br>
+            <!-- Аудиоплеер -->
+            <audio controls>
+                <source src="audio/alarm.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </main>
+
+        <!-- Боковая панель -->
+        <aside>
+            <h3>Навигация</h3>
+            <p>Управление историей:</p>
+            
+            <!-- Кнопки Назад / Вперед -->
+            <div class="aside-buttons">
+                <button onclick="goBack()" class="nav-btn">← Назад</button>
+                <button onclick="goForward()" class="nav-btn">Вперед →</button>
+            </div> 
+        </aside>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2025 Все права защищены.</p>
+    </footer>
+
+    <!-- Подключаем JS для работы кнопок -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
